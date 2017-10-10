@@ -1,5 +1,13 @@
 App = React.createClass({
-        
+    
+    getInitialState() {
+        return {
+            loading: false,
+            searchingText: '',
+            gif: {}
+        };
+    },
+     
     handleSearch: function(searchingText) {  // 1.
         this.setState({
             loading: true  // 2.

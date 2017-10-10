@@ -1,13 +1,5 @@
 Search = React.createClass({
     
-    getInitialState() {
-        return {
-            loading: false,
-            searchingText: '',
-            gif: {}
-        };
-    },
-    
 handleChange: function(event) {
     var searchingText = event.target.value;
     this.setState({searchingText: searchingText});
